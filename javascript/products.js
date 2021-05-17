@@ -58,7 +58,7 @@ const app = {
             </div>
             </td>
             <td  width="120">
-            <a href="#" class="deleteBtn"><span class="material-icons" data-action="remove" data-id="${item.id}">delete</span></a> 
+            <a href="#" class="deleteBtn text-gray"><span class="material-icons" data-action="remove" data-id="${item.id}">delete</span></a> 
             </td>
           </tr>`;
       });
@@ -85,7 +85,7 @@ const app = {
     },
     useComponents(e){
         const action = e.target.dataset.action;
-        const { id } = e.target.dataset;
+        const {id} = e.target.dataset;
         if (action === 'status') {
             this.activeProduct(id);
         }
